@@ -45,7 +45,7 @@ void state_init()
     if(nvm_readSettings(&state.settings) < 0)
     {
         state.settings = default_settings;
-        strncpy(state.settings.callsign, "OPNRTX", 10);
+        strncpy(state.settings.callsign, "N0CALL", 10);
     }
 
     /*
